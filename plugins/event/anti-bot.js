@@ -1,4 +1,13 @@
-export async function before(m, { conn, isAdmin, isBotAdmin }) {
+module.exports = {
+   start: async (m, {
+      conn,
+      budy,
+      Format,
+      isAdmins,
+      isOwner,
+      isBotAdmins
+   }) => {
+       export async function before(m, { conn, isAdmin, isBotAdmin }) {
     if (!m.isGroup) return
     let chat = global.db.data.chats[m.chat]
     let setting = global.db.data.settings[this.user.jid] || {}
