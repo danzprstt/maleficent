@@ -1,4 +1,4 @@
-console.log('🕒 Starting Maleficent . . .');
+console.log('🕒 Starting danzbot . . .');
 const path = require('path');
 const { fork } = require('child_process');
 const start = () => {
@@ -7,7 +7,7 @@ const start = () => {
         })
         .on('message', data => {
             if (data === 'reset') {
-                console.log('🕒 Restarting Maleficent . . .');
+                console.log('🕒 Restarting danzbot . . .');
                 p.kill()
             }
             if (data === 'uptime') {
