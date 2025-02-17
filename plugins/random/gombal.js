@@ -2,7 +2,7 @@ let handler = async (m) => {
     let data = gombal.getRandom()
     m.reply(data.trim())
 }
-handler.help = ['fun']
+handler.help = ['Fun']
 handler.tags = ['gombal']
 handler.command = /^(gombal)$/i
 
