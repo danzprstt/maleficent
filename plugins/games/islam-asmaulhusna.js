@@ -1,6 +1,16 @@
-const contoh = `*Asmaul Husna*
-`
-// data here
+exports.default = {
+   names: ['menu islam'],
+   tags: ['asmaulhusna'], 
+   command: ['asmaulhusna'],
+   start: async (m, {
+      conn,
+      text,
+      prefix,
+      command,
+      User,
+      Format
+   }) => 
+// asmaul husna
 const anjuran = `
 Dari Abu hurarirah radhiallahu anhu, Rasulullah Saw bersabda: "إِنَّ لِلَّهِ تَعَالَى تِسْعَةً وَتِسْعِينَ اسْمًا، مِائَةٌ إِلَّا وَاحِدًا، مَنْ أَحْصَاهَا دخل الجنة، وهو وتر يُحِبُّ الْوِتْرَ"
 Artinya: "Sesungguhnya Allah mempunyai sembilan puluh sembilan nama, alias seratus kurang satu. Barang siapa yang menghitung-hitungnya, niscaya masuk surga; Dia Witir dan menyukai yang witir".`
@@ -721,3 +731,5 @@ const asmaulhusna = [
         translation_en: "The Patient"
     }
 ]
+
+     limit= true 
