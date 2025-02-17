@@ -1,5 +1,5 @@
 exports.default = {
-   names: ['Group Menu'],
+   names: ['menu group'],
    tags: ['listonline'],
    command: ['lo', 'listonline'],
    start: async (m, {
