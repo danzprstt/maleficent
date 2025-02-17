@@ -2,8 +2,8 @@ let handler = async (m) => {
     let data = gombal.getRandom()
     m.reply(data.trim())
 }
-handler.help = ['gombal']
-handler.tags = ['quotes']
+handler.help = ['random']
+handler.tags = ['gombal']
 handler.command = /^(gombal)$/i
 
 export default handler
