@@ -5,7 +5,7 @@ module.exports = {
       User,
       Format
    }) => {
-       //	// Waktu Sholat
+      // Waktu Sholat
 		const jadwalSholat = {
 			Subuh: '04:30',
 			Dzuhur: '12:06',
