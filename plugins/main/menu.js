@@ -29,26 +29,26 @@ exports.default = {
       const type = db.settings.menu_type; //to change example type .setmenu 1 or .setmenu 2 or .setmenu 3 untuk ganti type menu ketik .setmenu 1 2 atau 3
       const top = { left, right, bigHeader, text, header_sub, select, type, command };
       let info = `┏${garis}\n${side} ${star} Menu ${setting.botName}\n${side} Simple WhatsApp Bot \n${side} By ${setting.footer}\n${side}${garis}\n`;
-      info += `${side} 👋 Selamat ${waktu.suasana.charAt(0).toUpperCase() + waktu.suasana.slice(1)} Bangsat\n${side} @${m.sender.split('@')[0]} 🐽\n`;
+      info += `${side} 👋 Selamat ${waktu.suasana.charAt(0).toUpperCase() + waktu.suasana.slice(1)} Bangsat\n${side} @${m.sender.split('@')[0]} 🚭\n`;
       info += `${side} Total Penggunaan Perintah‎\n${side} Bot Kamu: ${db.users[m.sender].hitCmd} Kali\n${side}${garis}\n`;
       info += `${side} Owner: +${setting.contact}\n`;
       info += `${side} IG: ${sosmed}\n${side}${garis}\n`;
       info += `${side} Network Bot Usage :\n${side} 📥 Download: ${Download}\n${side} 📤 Upload: ${Upload}\n${side}${garis}\n`;
       info += `${side} ${lolim} = Limit \n${side} ${loprem} = Premium\n*└*${garis}`;
       if (type === 1) {
-         m.react('🐽');
+         m.react('🚷');
          const all_menu = await Format.Menu(header, middle, pointer, bottom, prefix, top);
          conn.adReply(m.chat, `${info}\n\n${all_menu}`, cover, m, {
             showAds: true
          });
       } else if (type === 2) {
-         m.react('🖕');
+         m.react('✅');
          const sub_menu = await Format.Menu(header, middle, pointer, bottom, prefix, top);
          conn.adReply(m.chat, `${info}\n\n${sub_menu}`, cover, m, {
             showAds: true
          });
       } else if (type === 3) {
-         m.react('🥶');
+         m.react('😜');
          const opts = [{
             title: 'Owner',
             id: '.owner'
